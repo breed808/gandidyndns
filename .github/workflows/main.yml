@@ -3,6 +3,7 @@ name: CI
 on:
   push:
     branches: [ master ]
+    paths: "**/*.go"
 jobs:
   build_and_push:
     runs-on: ubuntu-latest

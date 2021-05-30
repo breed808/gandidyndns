@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  test:
+  build_and_push:
     runs-on: ubuntu-latest
     steps:
     - name: Login to Dockerhub

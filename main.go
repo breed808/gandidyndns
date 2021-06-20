@@ -45,11 +45,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	client, err := gandi.NewClient(nil)
-	if err != nil {
-		fmt.Printf("Failed to initialise Gandi client: %v\n", err)
-		os.Exit(1)
-	}
+	client := gandi.NewClient(os.Getenv("GANDI_API_KEY"), false, false)
 
 	for _, name := range os.Args[2:] {
 		record := gandi.Record{
@@ -60,7 +56,7 @@ func main() {
 			RrsetValues: []string{publicIP},
 		}
 
-		err = client.UpdateRecord(record, fqdn)
+		_, err = client.UpdateRecord(record, fqdn)
 		if err != nil {
 			fmt.Printf("Failed request: %s\n", err)
 			os.Exit(1)

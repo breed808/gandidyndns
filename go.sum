@@ -1,2 +1,4 @@
 github.com/breed808/gandiapi v0.0.0-20210530055218-a45798a57783 h1:KDajcfSL3E19yRjSPR1xB+wOxmn/d6yrhvYtPezWg4k=
 github.com/breed808/gandiapi v0.0.0-20210530055218-a45798a57783/go.mod h1:GXyavBdVkYzUjGJ6EosV78ghBVnZjhzJsI1scMdr5LM=
+github.com/breed808/gandiapi v0.0.1 h1:TafrEpBk3T1PZPdWLGCZHXd8aIhFlLPv8xupUdrK5MA=
+github.com/breed808/gandiapi v0.0.1/go.mod h1:GXyavBdVkYzUjGJ6EosV78ghBVnZjhzJsI1scMdr5LM=
